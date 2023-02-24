@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  border: 2rem solid white;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.description {
+  text-align: center;
+  margin: 2rem;
+}
+
+.description p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border: 4px dotted black;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.description a {
+  color: #000;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.weatherCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.weatherCard > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 3px 4px 0px 1px #000;  
+  background-color: #ffd166;
+}
+
+.weatherCard > div:hover {
+  box-shadow: 3px 4px 0px 3px #000;  
+}
+
+.weatherCard > div > img {
+  margin-bottom: 1rem;
+  width: auto;
+  height: 2rem;
+}
+
+.weatherCard > div > div:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.weatherCard > div > div:nth-child(3) {
+  font-size: 1rem;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.weatherCard > div > p {
+  font-size: 0.8rem;
+  text-align: center;
+}
