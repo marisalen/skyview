@@ -17,7 +17,6 @@ export default function Home() {
   const fetchWeather = async () => {
     const response = await axios.get(url);
     console.log(response);
-
     console.log(response.data.list);
     const arrayOfDays = [];
 
